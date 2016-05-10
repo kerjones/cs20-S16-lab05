@@ -63,23 +63,6 @@ class TestLab05Functions(unittest.TestCase):
     def test_indexOfLargestInt_6(self):
        self.assertEqual(  indexOfLargestInt([10,30,50,20,50]),    2)
 
-    # tests for smallestInt
-
-    def test_smallestInt_1(self):
-       self.assertEqual( smallestInt([]), False)
-
-    def test_smallestInt_2(self):
-       self.assertEqual( smallestInt('foo'), False)
-
-    def test_smallestInt_3(self):
-       self.assertEqual( smallestInt([3,5,4.5,6]),    False)
-
-    def test_smallestInt_4(self):
-       self.assertEqual( smallestInt([4]),    4)
-
-    def test_smallestInt_5(self):
-       self.assertEqual( smallestInt([-9,4,7,8,2]),  -9)
-
 
     # tests for indexOfSmallestInt
 
@@ -125,49 +108,62 @@ class TestLab05Functions(unittest.TestCase):
 
 
 
-##    # tests for indexOfShortestString
-##
-##
-##    def test_indexOfShortestString_1(self):
-##       self.assertEqual(  indexOfShortestString([]), False )
-##
-##    def test_indexOfShortestString_2(self):
-##       self.assertEqual(  indexOfShortestString('foo'), False )
-##
-##    def test_indexOfShortestString_3(self):
-##       self.assertEqual(  indexOfShortestString(['foo']), 0 )
-##
-##    def test_indexOfShortestString_4(self):
-##       self.assertEqual(  indexOfShortestString(['bear','cat','dog','mouse']), 1 )
-##
-##    # @@@ ADD SIX TEST CASES HERE FOR smallestInt
-##    # @@@ (a) a test case for an empty list
-##    # @@@ (b) a test case for something that is not a list
-##    # @@@ (c) a test case with only one thing in the list
-##    # @@@ (d) a test case where the smallest int is the first item
-##    # @@@ (e) a test case where the smallest int is the last item
-##    # @@@ (f) a test case where smallest is neither the first nor last item
-##
-##
-##
-##    # End of tests for lab05
-##
-##
-##
-##
-##def runTestsWithPrefix(testFile,prefix):
-##    """
-##    run only tests from testFile with a certain prefix
-##    Example: runTestsWithPrefix("lab03Tests.py","test_isPrimaryColor")
-##    """
-##    loader = unittest.TestLoader()
-##    loader.testMethodPrefix = prefix
-##    suite = loader.discover('.', pattern = testFile) 
-##    unittest.TextTestRunner(verbosity=2).run(suite)
-##
-##
-### When you run this file, it runs either ALL the tests, or
-### just some tests.  It depends on which line you comment out (or not)
+    # tests for indexOfShortestString
+
+
+    def test_indexOfShortestString_1(self):
+       self.assertEqual(  indexOfShortestString([]), False )
+
+    def test_indexOfShortestString_2(self):
+       self.assertEqual(  indexOfShortestString('foo'), False )
+
+    def test_indexOfShortestString_3(self):
+       self.assertEqual(  indexOfShortestString(['foo']), 0 )
+
+    def test_indexOfShortestString_4(self):
+       self.assertEqual(  indexOfShortestString(['bear','cat','dog','mouse']), 1 )
+
+     # tests for smallestInt
+
+    def test_smallestInt_1(self):
+       self.assertEqual( smallestInt([]), False)
+
+    def test_smallestInt_2(self):
+       self.assertEqual( smallestInt('boo'), False)
+
+    def test_smallestInt_3(self):
+       self.assertEqual( smallestInt([3,5,4,6]),    3)
+
+    def test_smallestInt_4(self):
+       self.assertEqual( smallestInt([4]),    4)
+
+    def test_smallestInt_5(self):
+       self.assertEqual( smallestInt([9,4,7,-8,2]),  -8)
+
+    def test_smallestInt_6(self):
+       self.assertEqual( smallestInt([9,4,7,8,1]),  1)
+
+
+
+
+    # End of tests for lab05
+
+
+
+
+def runTestsWithPrefix(testFile,prefix):
+    """
+    run only tests from testFile with a certain prefix
+    Example: runTestsWithPrefix("lab03Tests.py","test_isPrimaryColor")
+    """
+    loader = unittest.TestLoader()
+    loader.testMethodPrefix = prefix
+    suite = loader.discover('.', pattern = testFile) 
+    unittest.TextTestRunner(verbosity=2).run(suite)
+
+
+# When you run this file, it runs either ALL the tests, or
+# just some tests.  It depends on which line you comment out (or not)
 
 if __name__ == '__main__':
 
@@ -180,3 +176,4 @@ if __name__ == '__main__':
     #      such as test_FtoC  or test_isString
 
     # runTestsWithPrefix("lab05Tests.py","test_ithOfNPointsOnCircleX") 
+

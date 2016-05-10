@@ -157,12 +157,6 @@ def indexOfSmallestInt(listOfInts):
     return indexOfMinSoFar
 
 
-# @@@ NOW: complete the function below
-# @@@  You'll have to decide which of the models above fits
-# @@@  Recall that len(s) returns the length of a string
-# @@@  If you have a listOfStrings, then len(listOfStrings[i])) returns the length
-# @@@    of the ith string in that list
-
 def longestString(listOfStrings):
     """
     return longest string from a non-empty list of strings, False otherwise
@@ -198,12 +192,6 @@ def longestString(listOfStrings):
     return listOfStrings[longestWordSoFar]
 
 
- 
-
-
-# @@@ NOW: complete the function below
-# @@@  You'll have to decide which of the models above fits
-
 def indexOfShortestString(listOfStrings):
     """
     return index of shortest string from a non-empty list of strings, False otherwise
@@ -227,7 +215,17 @@ def indexOfShortestString(listOfStrings):
     >>>
 
     """
-    return "stub"
+    if type(listOfStrings)!=list or listOfStrings==[]:
+        return False
+    shortestWordSoFar = 0
+    for item in range(0,len(listOfStrings)):
+        if type(listOfStrings[item])!=str:
+            return False
+        if len(listOfStrings[item]) < len(listOfStrings[shortestWordSoFar]):
+            shortestWordSoFar = item
+    return shortestWordSoFar
+
+
 
 
 
