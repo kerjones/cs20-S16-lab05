@@ -104,27 +104,27 @@ class TestLab05Functions(unittest.TestCase):
 
     def test_indexOfSmallestInt_7(self):
        self.assertEqual( indexOfSmallestInt([50,30,10,30,50,-10]), 5 )
-##    
-##
-##    # tests for longestString
-##
-##    def test_longestString_1(self):
-##       self.assertEqual(  longestString([]),    False)
-##
-##    def test_longestString_2(self):
-##       self.assertEqual(  longestString('foo'), False )
-##
-##    def test_longestString_3(self):
-##       self.assertEqual(  longestString(['foo']), 'foo' )
-##
-##    def test_longestString_4(self):
-##       self.assertEqual(  longestString(['bear','cat','dog','mouse']), 'mouse' )
-##
-##    def test_longestString_5(self):
-##       self.assertEqual(  longestString(['cat','wolf','bear','dog']), 'wolf' )
-##
-##
-##
+    
+
+    # tests for longestString
+
+    def test_longestString_1(self):
+       self.assertEqual(  longestString([]),    False)
+
+    def test_longestString_2(self):
+       self.assertEqual(  longestString('foo'), False )
+
+    def test_longestString_3(self):
+       self.assertEqual(  longestString(['foo']), 'foo' )
+
+    def test_longestString_4(self):
+       self.assertEqual(  longestString(['bear','cat','dog','mouse']), 'mouse' )
+
+    def test_longestString_5(self):
+       self.assertEqual(  longestString(['cat','wolf','bear','dog']), 'wolf' )
+
+
+
 ##    # tests for indexOfShortestString
 ##
 ##

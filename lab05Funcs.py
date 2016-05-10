@@ -79,10 +79,6 @@ def indexOfLargestInt(listOfInts):
     return indexOfMaxSoFar
 
 
-# @@@ NOW: complete the function below
-# @@@  It will be similar to largestInt
-# @@@ Add your own test cases
-
 def smallestInt(listOfInts):
     """
     return value of smallest element of non-empty list of ints, or False otherwise
@@ -191,8 +187,15 @@ def longestString(listOfStrings):
     'wolf'
     >>>
     """
-    
-    return "stub"
+    if type(listOfStrings)!=list or listOfStrings==[]:
+        return False
+    longestWordSoFar = 0
+    for item in range(0,len(listOfStrings)):
+        if type(listOfStrings[item])!=str:
+            return False
+        if len(listOfStrings[item]) > len(listOfStrings[longestWordSoFar]):
+            longestWordSoFar = item
+    return listOfStrings[longestWordSoFar]
 
 
  
