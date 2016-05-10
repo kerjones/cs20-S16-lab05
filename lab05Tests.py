@@ -43,51 +43,50 @@ class TestLab05Functions(unittest.TestCase):
     def test_largestInt_5(self):
        self.assertEqual( largestInt([-9,4,7,8,2]),    8)
 
-##    # tests for indexOfLargestInt
-##
-##    def test_indexOfLargestInt_1(self):
-##       self.assertEqual(  indexOfLargestInt([]),    False)
-##
-##    def test_indexOfLargestInt_2(self):
-##       self.assertEqual(  indexOfLargestInt('foo'),    False)
-##
-##    def test_indexOfLargestInt_3(self):
-##       self.assertEqual(  indexOfLargestInt([3,5,4.5,6]),    False)
-##
-##    def test_indexOfLargestInt_4(self):
-##       self.assertEqual(  indexOfLargestInt([40]),    0)
-##
-##    def test_indexOfLargestInt_5(self):
-##       self.assertEqual(  indexOfLargestInt([-90,40,70,80,20]),    3)
-##
-##    def test_indexOfLargestInt_6(self):
-##       self.assertEqual(  indexOfLargestInt([10,30,50,20,50]),    2)
-##
-##
-##
-##    # tests for indexOfSmallestInt
-##
-## 
-##    def test_indexOfSmallestInt_1(self):
-##       self.assertEqual( indexOfSmallestInt([]), False )
-##
-##    def test_indexOfSmallestInt_2(self):
-##       self.assertEqual( indexOfSmallestInt('foo'), False )
-##
-##    def test_indexOfSmallestInt_3(self):
-##       self.assertEqual( indexOfSmallestInt([3,5,4.5,6]), False )
-##
-##    def test_indexOfSmallestInt_4(self):
-##       self.assertEqual( indexOfSmallestInt([40]), 0 )
-##
-##    def test_indexOfSmallestInt_5(self):
-##       self.assertEqual( indexOfSmallestInt([20,-90,40,70,80]), 1 )
-##
-##    def test_indexOfSmallestInt_6(self):
-##       self.assertEqual( indexOfSmallestInt([50,30,10,30,50,10]), 2 )
-##
-##    def test_indexOfSmallestInt_7(self):
-##       self.assertEqual( indexOfSmallestInt([50,30,10,30,50,-10]), 5 )
+    # tests for indexOfLargestInt
+
+    def test_indexOfLargestInt_1(self):
+       self.assertEqual(  indexOfLargestInt([]),    False)
+
+    def test_indexOfLargestInt_2(self):
+       self.assertEqual(  indexOfLargestInt('foo'),    False)
+
+    def test_indexOfLargestInt_3(self):
+       self.assertEqual(  indexOfLargestInt([3,5,4.5,6]),    False)
+
+    def test_indexOfLargestInt_4(self):
+       self.assertEqual(  indexOfLargestInt([40]),    0)
+
+    def test_indexOfLargestInt_5(self):
+       self.assertEqual(  indexOfLargestInt([-90,40,70,80,20]),    3)
+
+    def test_indexOfLargestInt_6(self):
+       self.assertEqual(  indexOfLargestInt([10,30,50,20,50]),    2)
+
+
+    # tests for indexOfSmallestInt
+
+ 
+    def test_indexOfSmallestInt_1(self):
+       self.assertEqual( indexOfSmallestInt([]), False )
+
+    def test_indexOfSmallestInt_2(self):
+       self.assertEqual( indexOfSmallestInt('foo'), False )
+
+    def test_indexOfSmallestInt_3(self):
+       self.assertEqual( indexOfSmallestInt([3,5,4.5,6]), False )
+
+    def test_indexOfSmallestInt_4(self):
+       self.assertEqual( indexOfSmallestInt([40]), 0 )
+
+    def test_indexOfSmallestInt_5(self):
+       self.assertEqual( indexOfSmallestInt([20,-90,40,70,80]), 1 )
+
+    def test_indexOfSmallestInt_6(self):
+       self.assertEqual( indexOfSmallestInt([50,30,10,30,50,10]), 2 )
+
+    def test_indexOfSmallestInt_7(self):
+       self.assertEqual( indexOfSmallestInt([50,30,10,30,50,-10]), 5 )
 ##    
 ##
 ##    # tests for longestString

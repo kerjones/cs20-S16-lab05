@@ -38,13 +38,6 @@ def largestInt(listOfInts):
     return maxSoFar
 
 
-
-# @@@ READ OVER THIS FUNCTION---Then delete this @@@ Comment
-# @@@ IT IS PROVIDED AS AN EXAMPLE OF HOW TO FIND THE INDEX
-# @@@ OF THE LARGEST ELEMENT IN A LIST
-# @@@ NOTE THAT FINDING THE INDEX IS DIFFERENT FROM FINDING THE VALUE
-
-
 def indexOfLargestInt(listOfInts):
     """
     return index of largest element of non-empty list of ints, or False otherwise
@@ -77,29 +70,12 @@ def indexOfLargestInt(listOfInts):
     
     if type(listOfInts)!=list or listOfInts==[]:
         return False
-
-    # Now we know there is at least one item in the list.
-    # We make an initial assumption that this item will be the largest.
-    # We then check every other item in the list
-
-    indexOfMaxSoFar = 0    # the one in position zero is the first candidate
-
-
-    # Note: we have to start from 0 because we need to check the type
-    #  of element[0] to see if it is an int.  Otherwise, we could start from 1
-    
-    for i in range(0,len(listOfInts)):  # all indexes in the list
-        
-       if type(listOfInts[i])!=int:      # make sure it is an int
+    indexOfMaxSoFar = 0 
+    for i in range(0,len(listOfInts)):
+       if type(listOfInts[i])!=int:
           return False
-
-       if listOfInts[i] > listOfInts[indexOfMaxSoFar]:  # compare new item
-          indexOfMaxSoFar = i  # we have a new candidate 
-
-    # Now we've gone through the entire list. If some other index were that
-    # of a larger int, we would have changed indexOfMaxSoFar to that.  So
-    # what we are left with must be the index of the largest one.
-
+       if listOfInts[i] > listOfInts[indexOfMaxSoFar]:
+          indexOfMaxSoFar = i
     return indexOfMaxSoFar
 
 
@@ -134,8 +110,7 @@ def smallestInt(listOfInts):
     10
     >>>
     """
-    
-    return "stub"
+
 
 
 
@@ -173,9 +148,15 @@ def indexOfSmallestInt(listOfInts):
     2
     >>>
     """
-    
- 
-    return "stub"
+    if type(listOfInts)!=list or listOfInts==[]:
+        return False
+    indexOfMinSoFar = 0
+    for i in range (0, len (listOfInts)):
+        if type(listOfInts[i])!=int:
+            return False
+        if listOfInts[i] < listOfInts[indexOfMinSoFar]:
+            indexOfMinSoFar = i
+    return indexOfMinSoFar
 
 
 # @@@ NOW: complete the function below
