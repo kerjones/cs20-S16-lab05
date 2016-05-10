@@ -110,14 +110,16 @@ def smallestInt(listOfInts):
     10
     >>>
     """
+    if type(listOfInts)!=list or listOfInts==[]:
+        return False
+    minSoFar = listOfInts[0]    
+    for i in range(0,len(listOfInts)):
+       if type(listOfInts[i])!=int:
+          return False
+       if listOfInts[i] < minSoFar: 
+          minSoFar = listOfInts[i]
+    return minSoFar 
 
-
-
-
-
-
-# @@@ NOW: complete the function below
-# @@@  It will be similar to indexOfLargestInt
 
 def indexOfSmallestInt(listOfInts):
     """
